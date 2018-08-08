@@ -56,4 +56,10 @@
 - Grab it from the site
 
 ## Hello World in Node.js
--
+- Look at hello_world/app.js
+- Simple node js server
+- For the rest of the course we will be using ExpressJS
+
+## Introduction to npm
+- npm: Node Package Manager
+- 
