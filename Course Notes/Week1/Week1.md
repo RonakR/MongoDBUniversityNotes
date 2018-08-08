@@ -1,0 +1,59 @@
+# Week 1
+
+## What is MongoDb?
+- Document Database
+- JSON for storage
+- Dev teams can design datamodels around data access patterns
+- Store all related data in one document
+- Since relations are not spread out among tables, sharding is made easier when trying to scale
+- Scaling out is built into Mongo
+- Schema design models support atomic reads and writes
+
+## Overview of Building an App with MongoDb
+- High level overview of apps using mongo
+- Mongo DB core server written in C++
+- client <--> server <--> MongoBD
+- Mongo has a shell
+- Node uses a library to communicate w/ mongodb (orm)
+
+
+## Installing MongoDB (mac)
+- Just use brew
+
+## JSON
+- JSON is key-value pairs
+- keys are always strings
+- keys and values are seperated by `:`
+- fields are seperated by `,`
+- json are seperated by `{}`
+- Supported types: String, Number, Boolean, Array, Object
+- Mongodb json 
+
+## BSON
+- Binary JSON
+- MongoDB drivers send recieve and save as BSON
+- On the app side MongoDB drivers convert it to JSON
+- BSON is lightweight, traversable (and indexable), and efficient (encoding and decoding done quickly)
+- BSON extends JSON types
+- Supported types: JSON types + Integer, Date, Images
+
+## Intro to Creating and Reading Documents
+- CRUD - Create, Read, Update, Delete
+- In MongoDB, documents are stored in collections, collections are stored in databases
+- Each document has a unique `ObjectId` field
+
+| Command                                    | Description                                             |
+| ------------------------------------------ | ------------------------------------------------------- |
+| help                                       | Shows available commands                                |
+| show dbs                                   | Shows all databases                                     |
+| use <db-name>                              | Switches to <db-name>, creates if doens't exist         |
+| db.<collection-name>.insertOne(<document>) | Insert a <document> in <collection-name>                |
+| db.<collection-name>.find()                | Retrives all documents from <collection-name>           |
+| ^.pretty()                                 | Arranges the documents neatly                           |
+| db.<collection-name>.find(<constraints>)   | Retrieves all documents in <collection-name> that match |
+
+## Installing Node.js
+- Grab it from the site
+
+## Hello World in Node.js
+-
