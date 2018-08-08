@@ -75,3 +75,13 @@
 
 ## Hello World using Express
 - ExpressJS is a library that makes creating and handling an HTTP server easy.
+
+## Hello World using Templates
+- Instead of sending text, we want send an html page. 
+- Use template libraries
+- Make directory for view template
+- Express requires template libraries to have a certain set of requiremnts 
+    - consolidate helps with that. 
+- Express allows to specify template engine, view engine and directory of where the views are
+- With in the endpoint, use the render function to pass in view name and view parameters 
+
