@@ -62,4 +62,13 @@
 
 ## Introduction to npm
 - npm: Node Package Manager
-- 
+- npm init: Prompts to create base package.json 
+- npm install: Installs package
+- npm install --save: Saves package to package.json for later installs
+
+## Intro to the Node.js MongoDB Driver
+- Driver is a library written in a langauage, js in this case.
+- Handles creating a wire connection to mongodb, i.e. socket connection, managing errors and connection to replica sets.
+- Install using npm and use it like any other driver
+- Whether you're doing a query or connecting to the db, all functions in the mongodb driver are asynchronous
+- All of them accepts callbacks
