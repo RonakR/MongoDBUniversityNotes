@@ -72,3 +72,6 @@
 - Install using npm and use it like any other driver
 - Whether you're doing a query or connecting to the db, all functions in the mongodb driver are asynchronous
 - All of them accepts callbacks
+
+## Hello World using Express
+- ExpressJS is a library that makes creating and handling an HTTP server easy.
