@@ -85,3 +85,10 @@
 - Express allows to specify template engine, view engine and directory of where the views are
 - With in the endpoint, use the render function to pass in view name and view parameters
 
+## All Together Now
+- Combines the NodeJS Driver and the Hello World Template to create a webpage that shows the movies stored in the db
+- Check out the code for more info
+
+## Express Handling GET/POST Requests
+- Not necessary for the course
+- Examples on GET and POST requests using Express
