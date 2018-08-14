@@ -92,3 +92,13 @@
 ## Express Handling GET/POST Requests
 - Not necessary for the course
 - Examples on GET and POST requests using Express
+
+## Intro to the Course Project
+- Complete e-commerce app called MongoMart
+- Schema design, aggregation, mongodb deployments (replica sets, sharded clusters), text / geo search
+- Associated techs: Web frameworks, node, etc. 
+
+## Homework 1.1
+- Running a restore on a mongo dump
+- `mongorestore dump`
+
