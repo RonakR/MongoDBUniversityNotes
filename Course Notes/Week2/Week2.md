@@ -17,3 +17,11 @@
     - This inserts even with errors
 - `insertOne` and `insertMany` are the primary ways to create documents
 - Update commands can create too, this is called `upserts`
+
+## _id
+- MongoDB, if not specified with `id`, creates `ObjectId` for each entry.
+- ObjectId: 12-Byte Hex String
+    - Date: 4 bytes
+    - MAC Address: 3 bytes
+    - PID: 2 bytes
+    - Counter: 3 bytes
