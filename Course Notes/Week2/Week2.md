@@ -64,3 +64,12 @@
     - `db.movieDetails.find({ rated: "PG"} , { writers: 0, actors: 0, _id: 0})`
         - excludes the above fields from the results
 
+## Array Operators
+- $all:
+    - db.movieDetails.find({ genres: { $all: ["Comedy", "Crime", "Drama"] } })
+    - Grabs movies with all those elems present
+- $size:
+    - db.movieDetails.find({ countries: { $size: 1 } })
+    - Returns only movies with 1 country
+- $elemMatch:
+    - db.movieDetails.find({ $elemMatch { country: "USA", revenue: { $lt: 10 } } })
