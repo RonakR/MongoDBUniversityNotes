@@ -1,0 +1,22 @@
+db.companies.aggregate([
+    { $match: { founded_year: 2004} },
+    { $match: { "funding_rounds.raised_amount": {$ne: null} }},
+    { $unwind: "$funding_rounds" },
+    { $group: {
+        _id: {company: "$name"},
+        rounds: { $sum: 1},
+        funding: {
+            $push: {
+                amount: "$funding_rounds.raised_amount"
+            }
+        }
+    }},
+    { $match: { rounds: {$gte: 5}}},
+    { $project: {
+        sum: { $sum: "$funding.amount"},
+        funding: 1, 
+        rounds: 1,
+    }},
+    { $sort: { sum: 1 }}
+//     { $match: { "_id.company": "Facebook" }}
+])
